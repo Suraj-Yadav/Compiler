@@ -12,10 +12,10 @@ exptree.o: exptree.cpp exptree.h expression.hpp
 expression.exe:	expression.o expression_lex.o exptree.o	
 		g++ -o expression.exe expression.o expression_lex.o exptree.o 
 clean:
-		del expression_lex.cpp
-		del expression.cpp
-		del expression.hpp
-		del expression.o
-		del expression_lex.o
-		del expression.exe
-		del exptree.o
+		rm -f expression_lex.cpp
+		rm -f expression.cpp
+		rm -f expression.hpp
+		rm -f expression.o
+		rm -f expression_lex.o
+		rm -f expression.exe
+		rm -f exptree.o

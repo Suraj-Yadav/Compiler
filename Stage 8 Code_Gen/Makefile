@@ -14,11 +14,11 @@ syntaxTree.o: syntaxTree.cpp syntaxTree.h compiler.hpp symbolTable.h
 compiler.exe:	compiler.o compiler_lex.o syntaxTree.o symbolTable.o
 		g++ -o compiler.exe compiler.o compiler_lex.o syntaxTree.o symbolTable.o 
 clean:
-		del compiler_lex.cpp
-		del compiler.cpp
-		del compiler.hpp
-		del compiler.o
-		del compiler_lex.o
-		del compiler.exe
-		del syntaxTree.o
-		del symbolTable.o
+		rm -f compiler_lex.cpp
+		rm -f compiler.cpp
+		rm -f compiler.hpp
+		rm -f compiler.o
+		rm -f compiler_lex.o
+		rm -f compiler.exe
+		rm -f syntaxTree.o
+		rm -f symbolTable.o

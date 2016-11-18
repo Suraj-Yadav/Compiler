@@ -12,10 +12,10 @@ syntaxTree.o: syntaxTree.cpp syntaxTree.h Interpreter.hpp
 Interpreter.exe:	Interpreter.o Interpreter_lex.o syntaxTree.o
 		g++ -o Interpreter.exe Interpreter.o Interpreter_lex.o syntaxTree.o
 clean:
-		del Interpreter_lex.cpp
-		del Interpreter.cpp
-		del Interpreter.hpp
-		del Interpreter.o
-		del Interpreter_lex.o
-		del Interpreter.exe
-		del syntaxTree.o
+		rm -f Interpreter_lex.cpp
+		rm -f Interpreter.cpp
+		rm -f Interpreter.hpp
+		rm -f Interpreter.o
+		rm -f Interpreter_lex.o
+		rm -f Interpreter.exe
+		rm -f syntaxTree.o
